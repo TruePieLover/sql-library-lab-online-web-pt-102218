@@ -43,6 +43,5 @@ def select_character_names_and_number_of_books_they_are_in
    ON character_books.character_id = characters.id
    GROUP BY characters.name 
    ORDER BY COUNT(books.title) DESC, characters.name 
-   
    "
 end
